@@ -7,7 +7,7 @@ export interface User {
     email: string;
 }
 
-const API_URL = 'http://localhost:3001/usuarios';
+const API_URL = 'https://redes-backend-production.up.railway.app/usuarios';
 
 export const getUsers = async () => {
     const response = await axios.get(API_URL);
